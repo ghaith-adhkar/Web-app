@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>غيث - الرفيق الهادئ</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error-container": "#93000a",
+              "on-background": "#191c1d",
+              "outline-variant": "#c9c4d7",
+              "tertiary-fixed": "#ffdcc5",
+              "on-primary-fixed": "#1c0062",
+              "on-tertiary-fixed-variant": "#713700",
+              "tertiary-fixed-dim": "#ffb784",
+              "on-primary": "#ffffff",
+              "surface-container-highest": "#e1e3e4",
+              "on-secondary-fixed-variant": "#493d7d",
+              "outline": "#797586",
+              "tertiary": "#803f00",
+              "on-tertiary-container": "#ffe4d4",
+              "on-secondary": "#ffffff",
+              "primary-container": "#6c4ce6",
+              "secondary-fixed": "#e6deff",
+              "secondary-container": "#c2b5fe",
+              "surface-tint": "#613fdb",
+              "background": "#f8f9fa",
+              "inverse-primary": "#cabeff",
+              "on-primary-container": "#ede6ff",
+              "on-tertiary": "#ffffff",
+              "primary-fixed": "#e6deff",
+              "on-primary-fixed-variant": "#491ec3",
+              "surface-dim": "#d9dadb",
+              "on-secondary-fixed": "#1d0d50",
+              "primary-fixed-dim": "#cabeff",
+              "secondary-fixed-dim": "#cabeff",
+              "surface-container": "#edeeef",
+              "on-surface-variant": "#484555",
+              "error-container": "#ffdad6",
+              "surface-container-low": "#f3f4f5",
+              "surface-container-high": "#e7e8e9",
+              "on-tertiary-fixed": "#301400",
+              "inverse-surface": "#2e3132",
+              "on-secondary-container": "#4f4384",
+              "on-error": "#ffffff",
+              "secondary": "#615597",
+              "inverse-on-surface": "#f0f1f2",
+              "tertiary-container": "#a45300",
+              "error": "#ba1a1a",
+              "surface-variant": "#e1e3e4",
+              "surface": "#f8f9fa",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#f8f9fa",
+              "primary": "#532ecd",
+              "on-surface": "#191c1d"
+            },
+            fontFamily: {
+              "headline": ["Avenir Arabic", "sans-serif"],
+              "body": ["Avenir Arabic", "sans-serif"],
+              "label": ["Avenir Arabic", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        @font-face {
+            font-family: 'Avenir Arabic';
+            src: local('Avenir Arabic'), local('Avenir-Arabic');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Avenir Arabic', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(108, 76, 230, 0.08) 0%, rgba(248, 249, 250, 0) 70%);
+        }
+        h1, h2, h3, h4, h5, h6, p, a, button {
+            font-family: 'Avenir Arabic', sans-serif !important;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.03)]">
+<nav class="flex flex-row-reverse justify-between items-center px-6 md:px-12 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center">
+<img alt="غيث" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0ujZlW5I0y6qxvj4msKnK3hyq2-yGtkZlVSN16G7Rep-pSYBxHU-z1av2PpzKqDKi9eDm9K7ySq48Oedm45fYqUsUWVU-LIaIZvLCGdoWJJ-aOKc4OXxrX-FbUsg9WoG4m6MqRIqUiD6dGMv4mjxDgoYp4CtnjEb7_XndmzifGYsoDej88-knfCKmpwK_2_ib85z0VqUcEjgaKCSoA4h4iBfjr1qkToFG5YareHbkYss-cyhJzNOJ1A2RpSGObfkzAgBttzK5n8VCDE"/>
+</div>
+<div class="hidden md:flex flex-row-reverse items-center gap-10">
+<a class="text-[#6C4CE6] dark:text-[#A892FF] border-b-2 border-[#6C4CE6] pb-1 font-medium" href="#home">تحميل</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#6C4CE6] transition-colors font-medium" href="#features">المميزات</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#6C4CE6] transition-colors font-medium" href="#about">من نحن</a>
+</div>
+<button class="bg-[#6C4CE6] text-white px-8 py-2.5 rounded-full font-bold hover:opacity-90 transition-all duration-300 active:scale-95">
+                ابدأ الآن
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 md:pt-48 md:pb-32 hero-gradient" id="home">
+<div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row-reverse items-center gap-16">
+<div class="flex-1 text-center md:text-right">
+<div class="mb-6 flex justify-center md:justify-start">
+<img alt="غيث" class="h-20 md:h-28 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0ujZlW5I0y6qxvj4msKnK3hyq2-yGtkZlVSN16G7Rep-pSYBxHU-z1av2PpzKqDKi9eDm9K7ySq48Oedm45fYqUsUWVU-LIaIZvLCGdoWJJ-aOKc4OXxrX-FbUsg9WoG4m6MqRIqUiD6dGMv4mjxDgoYp4CtnjEb7_XndmzifGYsoDej88-knfCKmpwK_2_ib85z0VqUcEjgaKCSoA4h4iBfjr1qkToFG5YareHbkYss-cyhJzNOJ1A2RpSGObfkzAgBttzK5n8VCDE"/>
+</div>
+<p class="text-xl md:text-2xl text-on-surface-variant mb-10 leading-relaxed max-w-xl">
+                        الرفيق الهادئ الذي يذكّرك بالله في زحمة الحياة
+                    </p>
+<div class="flex flex-col sm:flex-row-reverse gap-4 justify-center md:justify-start mt-8">
+<a class="flex items-center gap-3 bg-white border border-outline-variant/30 text-on-background px-6 py-3 rounded-2xl hover:bg-slate-50 transition-all shadow-md group" href="https://apps.apple.com/us/app/ghaith-%D8%BA%D9%8A%D8%AB/id6759472748" target="_blank">
+<svg width="50px" height="50px" viewBox="0 0 960 960" fill="none" xmlns="http://www.w3.org/2000/svg" data--h-bstatus="0OBSERVED"><g id="SVGRepo_bgCarrier" stroke-width="0" data--h-bstatus="0OBSERVED"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" data--h-bstatus="0OBSERVED"></g><g id="SVGRepo_iconCarrier" data--h-bstatus="0OBSERVED"> <path d="M697.234 663.371C716.41 696.729 667.671 724.494 648.395 693.333C606.548 628.614 569.794 560.699 528.745 495.381C516.161 464.219 479.107 431.161 495.986 396.005C540.43 337.178 577.384 418.776 594.363 456.829C639.506 550.512 610.443 525.243 710.717 524.544C754.263 524.644 758.757 591.361 715.312 596.155C698.732 598.052 682.453 597.852 665.674 598.252C677.159 619.725 684.95 642.297 697.234 663.371Z" fill="white" data--h-bstatus="0OBSERVED"></path> <path d="M474.312 257.679C486.597 230.913 517.059 198.453 545.224 224.92C564.3 242.298 551.316 269.465 538.332 287.242C489.194 363.747 450.242 445.844 405.598 524.845C445.448 528.341 485.598 525.844 525.149 532.835C564.1 539.827 558.907 597.455 519.256 598.353C442.153 601.35 365.049 595.457 287.845 599.652C260.28 597.554 225.024 612.336 203.751 589.065C161.104 516.456 275.761 527.442 317.608 524.546C343.776 499.377 356.659 456.93 377.833 425.769C395.311 394.608 412.39 363.147 429.868 331.986C432.964 322.199 418.982 314.109 415.486 305.12C349.169 230.713 442.153 172.885 474.312 257.679Z" fill="white" data--h-bstatus="0OBSERVED"></path> <path d="M330.292 643.197C329.393 609.04 284.549 595.856 265.373 626.118C256.884 640.301 246.097 654.483 242.302 670.763C234.811 703.022 275.56 724.995 298.332 700.925C313.513 684.645 325.198 664.87 330.292 643.197ZM545.223 224.92C516.959 198.353 486.597 230.813 474.312 257.679C442.152 172.885 349.068 230.713 415.485 305.22C418.981 314.208 432.864 322.198 429.867 332.086C412.389 363.347 395.311 394.708 377.833 425.869C356.659 457.03 343.775 499.377 317.608 524.645C275.76 527.442 161.103 516.455 203.85 589.165C225.123 612.535 260.379 597.654 287.945 599.751C365.148 595.557 442.152 601.449 519.356 598.453C559.006 597.554 564.2 539.926 525.248 532.935C485.698 525.944 445.548 528.341 405.698 524.945C450.342 445.944 489.293 363.746 538.432 287.342C551.316 269.564 564.299 242.398 545.223 224.92ZM342.277 86.6927C463.326 84.6952 587.87 65.619 705.523 104.97C830.467 143.522 874.012 278.153 872.814 397.105C873.713 481.299 874.012 566.193 858.931 649.19C834.262 804.895 746.172 873.01 590.666 874.608C422.377 880.301 172.489 908.965 104.474 711.012C76.5092 599.452 86.6964 481.1 88.1946 366.843C98.9811 200.75 163.301 90.2882 342.277 86.6927ZM715.411 596.156C758.856 591.362 754.362 524.645 710.816 524.545C610.542 525.244 639.605 550.513 594.462 456.83C577.383 418.778 540.529 337.279 496.085 396.006C479.206 431.062 516.359 464.121 528.844 495.382C569.892 560.6 606.647 628.515 648.494 693.334C667.77 724.495 716.509 696.73 697.333 663.372C685.048 642.298 677.258 619.726 665.773 598.253C682.452 597.854 698.831 598.053 715.411 596.156Z" fill="#6b4ce6" data--h-bstatus="0OBSERVED"></path> <path d="M265.471 626.12C284.647 595.758 329.491 609.042 330.39 643.199C325.296 664.872 313.511 684.647 298.53 701.027C275.758 724.997 235.009 703.124 242.5 670.864C246.195 654.485 256.882 640.302 265.471 626.12Z" fill="white" data--h-bstatus="0OBSERVED"></path> </g></svg>
+
+<div class="text-right"><div class="text-[10px] opacity-70 leading-none">Download on</div><div class="text-base font-bold">App Store</div></div>
+</a>
+<a class="flex items-center gap-3 bg-white border border-outline-variant/30 text-on-background px-6 py-3 rounded-2xl hover:bg-slate-50 transition-all shadow-md group" href="https://play.google.com/store/apps/details?id=com.ghaith.adhkar" target="_blank">
+<svg width="50px" height="50px" viewBox="0 0 960 960" fill="none" xmlns="http://www.w3.org/2000/svg" data--h-bstatus="0OBSERVED"><g id="SVGRepo_bgCarrier" stroke-width="0" data--h-bstatus="0OBSERVED"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" data--h-bstatus="0OBSERVED"></g><g id="SVGRepo_iconCarrier" data--h-bstatus="0OBSERVED"> <path d="M629.816 562.299C541.126 473.91 530.44 493.685 632.812 410.289C742.674 488.691 763.349 464.421 629.816 562.299Z" fill="white" data--h-bstatus="0OBSERVED"></path> <path d="M531.639 463.122C256.782 200.251 271.963 188.066 592.163 384.121C595.06 387.117 606.645 389.614 601.352 394.708C577.981 417.279 555.309 439.951 531.639 463.122Z" fill="white" data--h-bstatus="0OBSERVED"></path> <path d="M338.578 701.226C398.004 635.209 463.722 573.985 525.345 509.666C530.239 504.672 532.136 504.572 536.83 509.366C558.603 531.438 580.376 553.611 602.149 575.783C536.431 633.71 436.656 681.351 346.868 703.124C343.172 702.225 340.875 701.725 338.578 701.226Z" fill="white" data--h-bstatus="0OBSERVED"></path> <path d="M310.314 691.039C298.529 701.226 289.141 663.274 291.638 656.881C288.542 629.016 259.877 202.35 317.106 289.441C373.935 347.069 431.163 404.197 488.192 461.626C492.587 469.815 513.56 478.504 505.97 488.093C439.253 554.21 372.736 620.827 310.314 691.039Z" fill="white" data--h-bstatus="0OBSERVED"></path> <path d="M592.163 384.121C271.963 188.066 256.782 200.251 531.639 463.123C555.309 439.952 577.881 417.28 601.351 394.708C606.645 389.515 595.059 387.018 592.163 384.121ZM602.15 575.782C580.378 553.709 558.605 531.437 536.832 509.365C532.138 504.571 530.24 504.771 525.346 509.664C463.723 573.984 398.006 635.208 338.58 701.225C340.877 701.724 343.174 702.224 346.869 703.023C436.657 681.35 536.432 633.61 602.15 575.782ZM632.812 410.289C530.44 493.684 541.127 473.909 629.816 562.299C763.349 464.421 742.675 488.691 632.812 410.289ZM317.107 289.44C259.878 202.349 288.542 628.915 291.639 656.88C289.242 663.272 298.63 701.225 310.315 691.038C372.737 620.825 439.154 554.209 505.971 488.191C513.561 478.503 492.587 469.914 488.193 461.724C431.164 404.296 373.936 347.068 317.107 289.44ZM593.062 873.31C214.335 904.371 55.234 834.458 88.7921 425.769C89.9906 245.095 135.034 90.1888 344.472 87.2924C773.436 57.7294 905.671 114.658 870.016 572.386C856.732 756.756 794.11 872.211 593.062 873.31Z" fill="#6b4ce6" data--h-bstatus="0OBSERVED"></path> </g></svg>
+
+<div class="text-right"><div class="text-[10px] opacity-70 leading-none">Get it on</div><div class="text-base font-bold">Google Play</div></div>
+</a>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="relative z-10 w-full max-w-[280px] mx-auto">
+<img alt="تطبيق غيث على الجوال" class="rounded-[2.5rem] shadow-2xl border-[6px] border-white dark:border-slate-800 rotate-[-5deg] w-full" src="img.png"/>
+</div>
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="py-24 bg-surface-container-low/30" id="about">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<div class="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-bold mb-6">من نحن</div>
+<h2 class="text-3xl md:text-4xl font-bold text-on-background mb-8 font-headline">غيث وُجد ليكون الرفيق الهادئ</h2>
+<p class="text-lg md:text-xl text-on-surface-variant leading-loose">
+                    في عالم يتسارع كل شيء فيه، نؤمن في غيث أن الروح تحتاج إلى لحظات من السكينة. قمنا بتطوير هذا التطبيق ليكون جسراً يربطك بذكر الله بسهولة وجمال، مع واجهة مستخدم تحترم هدوءك النفسي وتلبي احتياجاتك الروحية.
+                </p>
+</div>
+</section>
+<!-- Why Us Section -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-on-background font-headline">لماذا نهتم بك؟</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="p-8 bg-surface-container-lowest rounded-lg text-center hover:shadow-lg transition-shadow border border-outline-variant/10">
+<div class="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<h3 class="text-xl font-bold mb-3">هدوء نفسي</h3>
+<p class="text-on-surface-variant leading-relaxed">تصميم مريح للعين يساعدك على التركيز في ذكرك</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-lg text-center hover:shadow-lg transition-shadow border border-outline-variant/10">
+<div class="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-3xl">notifications_active</span>
+</div>
+<h3 class="text-xl font-bold mb-3">تنبيهات ذكية</h3>
+<p class="text-on-surface-variant leading-relaxed">تذكيرات تتماشى مع نمط حياتك اليومي</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-lg text-center hover:shadow-lg transition-shadow border border-outline-variant/10">
+<div class="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-3xl">auto_awesome</span>
+</div>
+<h3 class="text-xl font-bold mb-3">تجربة مخصصة</h3>
+<p class="text-on-surface-variant leading-relaxed">تحكم كامل في كيفية ظهور واستماع الأذكار</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-lg text-center hover:shadow-lg transition-shadow border border-outline-variant/10">
+<div class="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-3xl">offline_bolt</span>
+</div>
+<h3 class="text-xl font-bold mb-3">دائماً معك</h3>
+<p class="text-on-surface-variant leading-relaxed">يعمل بكفاءة عالية دون الحاجة لاتصال دائم بالإنترنت</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Bento Grid -->
+<section class="py-24 bg-surface-container-low/20" id="features">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center mb-20">
+<h2 class="text-3xl md:text-5xl font-bold text-on-background font-headline">مميزات غيث</h2>
+<p class="mt-4 text-on-surface-variant">كل ما تحتاجه لرحلتك الروحية في مكان واحد</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Feature 1 -->
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-lg flex flex-col md:flex-row items-center gap-8 border border-outline-variant/10 group">
+<div class="flex-1">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" data-weight="fill">favorite</span>
+<h3 class="text-2xl font-bold mb-3">أذكاري المفضلة</h3>
+<p class="text-on-surface-variant">قم بجمع الأذكار التي تلامس قلبك في قائمة خاصة للوصول إليها بسرعة في أي وقت.</p>
+</div>
+<div class="w-full md:w-64 h-48 bg-primary-container/10 rounded-xl flex items-center justify-center overflow-hidden">
+<div class="bg-white p-4 rounded-lg shadow-sm w-40 transform group-hover:scale-110 transition-transform">
+<div class="h-2 w-20 bg-primary/20 rounded mb-2"></div>
+<div class="h-2 w-12 bg-primary/10 rounded"></div>
+</div>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="bg-primary text-on-primary p-8 rounded-lg flex flex-col justify-between border border-primary/20">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4">dark_mode</span>
+<h3 class="text-2xl font-bold mb-3">الوضع الداكن</h3>
+<p class="text-primary-fixed-dim">تجربة ليلية مريحة للعين تساعدك على قراءة الأذكار قبل النوم بكل سكينة.</p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">schedule</span>
+<h3 class="text-2xl font-bold mb-3">تعديل أوقات الصلاة</h3>
+<p class="text-on-surface-variant">دقة عالية في مواقيت الصلاة مع إمكانية التعديل اليدوي حسب مدينتك.</p>
+</div>
+<!-- Feature 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">search</span>
+<h3 class="text-2xl font-bold mb-3">بحث ذكي</h3>
+<p class="text-on-surface-variant">ابحث عن أي ذكر أو دعاء بكلمات بسيطة وستجده فوراً.</p>
+</div>
+<!-- Feature 5 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">task_alt</span>
+<h3 class="text-2xl font-bold mb-3">قائمة الإنجاز اليومي</h3>
+<p class="text-on-surface-variant">تتبع وردك اليومي وشاهد تقدمك لزيادة همتك في الطاعات.</p>
+</div>
+<!-- Feature 6 -->
+<div class="bg-secondary-container p-8 rounded-lg border border-secondary/10">
+<span class="material-symbols-outlined text-4xl text-on-secondary-container mb-4">notifications_active</span>
+<h3 class="text-2xl font-bold mb-3 text-on-secondary-container">تذكيرات تلقائية</h3>
+<p class="text-on-secondary-variant">لا تنس ذكر الله أبداً مع منبهات لطيفة تذكرك بالورد في مواعيده.</p>
+</div>
+<!-- Feature 7 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">calendar_month</span>
+<h3 class="text-2xl font-bold mb-3">تعديل التاريخ الهجري</h3>
+<p class="text-on-surface-variant">مزامنة دقيقة للتاريخ الهجري مع إمكانية التعديل يدوياً.</p>
+</div>
+<!-- Feature 8 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">volume_up</span>
+<h3 class="text-2xl font-bold mb-3">تشغيل الأذكار صوتيًا</h3>
+<p class="text-on-surface-variant">استمع للأذكار بأعذب الأصوات عندما تكون في الطريق أو منشغلاً.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Download Section -->
+<section class="py-32 relative overflow-hidden">
+<div class="max-w-5xl mx-auto px-6 bg-primary rounded-xl md:rounded-[4rem] p-12 md:p-24 text-center text-on-primary relative">
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
+<h2 class="text-4xl md:text-6xl font-bold mb-8 font-headline">ابدأ رحلتك مع غيث اليوم</h2>
+<p class="text-xl mb-12 text-primary-fixed-dim max-w-2xl mx-auto">حمّل التطبيق الآن وانضم إلى آلاف المستخدمين الذين جعلوا غيث رفيقهم اليومي في ذكر الله.</p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+<a class="flex items-center gap-3 bg-white text-on-background px-8 py-4 rounded-2xl hover:bg-slate-50 transition-all w-full sm:w-auto shadow-xl group" href="https://apps.apple.com/us/app/ghaith-%D8%BA%D9%8A%D8%AB/id6759472748" target="_blank">
+<svg width="50px" height="50px" viewBox="0 0 960 960" fill="none" xmlns="http://www.w3.org/2000/svg" data--h-bstatus="0OBSERVED"><g id="SVGRepo_bgCarrier" stroke-width="0" data--h-bstatus="0OBSERVED"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" data--h-bstatus="0OBSERVED"></g><g id="SVGRepo_iconCarrier" data--h-bstatus="0OBSERVED"> <path d="M697.234 663.371C716.41 696.729 667.671 724.494 648.395 693.333C606.548 628.614 569.794 560.699 528.745 495.381C516.161 464.219 479.107 431.161 495.986 396.005C540.43 337.178 577.384 418.776 594.363 456.829C639.506 550.512 610.443 525.243 710.717 524.544C754.263 524.644 758.757 591.361 715.312 596.155C698.732 598.052 682.453 597.852 665.674 598.252C677.159 619.725 684.95 642.297 697.234 663.371Z" fill="white" data--h-bstatus="0OBSERVED"></path> <path d="M474.312 257.679C486.597 230.913 517.059 198.453 545.224 224.92C564.3 242.298 551.316 269.465 538.332 287.242C489.194 363.747 450.242 445.844 405.598 524.845C445.448 528.341 485.598 525.844 525.149 532.835C564.1 539.827 558.907 597.455 519.256 598.353C442.153 601.35 365.049 595.457 287.845 599.652C260.28 597.554 225.024 612.336 203.751 589.065C161.104 516.456 275.761 527.442 317.608 524.546C343.776 499.377 356.659 456.93 377.833 425.769C395.311 394.608 412.39 363.147 429.868 331.986C432.964 322.199 418.982 314.109 415.486 305.12C349.169 230.713 442.153 172.885 474.312 257.679Z" fill="white" data--h-bstatus="0OBSERVED"></path> <path d="M330.292 643.197C329.393 609.04 284.549 595.856 265.373 626.118C256.884 640.301 246.097 654.483 242.302 670.763C234.811 703.022 275.56 724.995 298.332 700.925C313.513 684.645 325.198 664.87 330.292 643.197ZM545.223 224.92C516.959 198.353 486.597 230.813 474.312 257.679C442.152 172.885 349.068 230.713 415.485 305.22C418.981 314.208 432.864 322.198 429.867 332.086C412.389 363.347 395.311 394.708 377.833 425.869C356.659 457.03 343.775 499.377 317.608 524.645C275.76 527.442 161.103 516.455 203.85 589.165C225.123 612.535 260.379 597.654 287.945 599.751C365.148 595.557 442.152 601.449 519.356 598.453C559.006 597.554 564.2 539.926 525.248 532.935C485.698 525.944 445.548 528.341 405.698 524.945C450.342 445.944 489.293 363.746 538.432 287.342C551.316 269.564 564.299 242.398 545.223 224.92ZM342.277 86.6927C463.326 84.6952 587.87 65.619 705.523 104.97C830.467 143.522 874.012 278.153 872.814 397.105C873.713 481.299 874.012 566.193 858.931 649.19C834.262 804.895 746.172 873.01 590.666 874.608C422.377 880.301 172.489 908.965 104.474 711.012C76.5092 599.452 86.6964 481.1 88.1946 366.843C98.9811 200.75 163.301 90.2882 342.277 86.6927ZM715.411 596.156C758.856 591.362 754.362 524.645 710.816 524.545C610.542 525.244 639.605 550.513 594.462 456.83C577.383 418.778 540.529 337.279 496.085 396.006C479.206 431.062 516.359 464.121 528.844 495.382C569.892 560.6 606.647 628.515 648.494 693.334C667.77 724.495 716.509 696.73 697.333 663.372C685.048 642.298 677.258 619.726 665.773 598.253C682.452 597.854 698.831 598.053 715.411 596.156Z" fill="#6b4ce6" data--h-bstatus="0OBSERVED"></path> <path d="M265.471 626.12C284.647 595.758 329.491 609.042 330.39 643.199C325.296 664.872 313.511 684.647 298.53 701.027C275.758 724.997 235.009 703.124 242.5 670.864C246.195 654.485 256.882 640.302 265.471 626.12Z" fill="white" data--h-bstatus="0OBSERVED"></path> </g></svg>
+    
+    <div class="text-right"><div class="text-xs opacity-70">تحميل من</div><div class="text-lg font-bold leading-tight">App Store</div></div></a>
+<a class="flex items-center gap-3 bg-white text-on-background px-8 py-4 rounded-2xl hover:bg-slate-50 transition-all w-full sm:w-auto shadow-xl group" href="https://play.google.com/store/apps/details?id=com.ghaith.adhkar" target="_blank">
+<svg width="50px" height="50px" viewBox="0 0 960 960" fill="none" xmlns="http://www.w3.org/2000/svg" data--h-bstatus="0OBSERVED"><g id="SVGRepo_bgCarrier" stroke-width="0" data--h-bstatus="0OBSERVED"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" data--h-bstatus="0OBSERVED"></g><g id="SVGRepo_iconCarrier" data--h-bstatus="0OBSERVED"> <path d="M629.816 562.299C541.126 473.91 530.44 493.685 632.812 410.289C742.674 488.691 763.349 464.421 629.816 562.299Z" fill="white" data--h-bstatus="0OBSERVED"></path> <path d="M531.639 463.122C256.782 200.251 271.963 188.066 592.163 384.121C595.06 387.117 606.645 389.614 601.352 394.708C577.981 417.279 555.309 439.951 531.639 463.122Z" fill="white" data--h-bstatus="0OBSERVED"></path> <path d="M338.578 701.226C398.004 635.209 463.722 573.985 525.345 509.666C530.239 504.672 532.136 504.572 536.83 509.366C558.603 531.438 580.376 553.611 602.149 575.783C536.431 633.71 436.656 681.351 346.868 703.124C343.172 702.225 340.875 701.725 338.578 701.226Z" fill="white" data--h-bstatus="0OBSERVED"></path> <path d="M310.314 691.039C298.529 701.226 289.141 663.274 291.638 656.881C288.542 629.016 259.877 202.35 317.106 289.441C373.935 347.069 431.163 404.197 488.192 461.626C492.587 469.815 513.56 478.504 505.97 488.093C439.253 554.21 372.736 620.827 310.314 691.039Z" fill="white" data--h-bstatus="0OBSERVED"></path> <path d="M592.163 384.121C271.963 188.066 256.782 200.251 531.639 463.123C555.309 439.952 577.881 417.28 601.351 394.708C606.645 389.515 595.059 387.018 592.163 384.121ZM602.15 575.782C580.378 553.709 558.605 531.437 536.832 509.365C532.138 504.571 530.24 504.771 525.346 509.664C463.723 573.984 398.006 635.208 338.58 701.225C340.877 701.724 343.174 702.224 346.869 703.023C436.657 681.35 536.432 633.61 602.15 575.782ZM632.812 410.289C530.44 493.684 541.127 473.909 629.816 562.299C763.349 464.421 742.675 488.691 632.812 410.289ZM317.107 289.44C259.878 202.349 288.542 628.915 291.639 656.88C289.242 663.272 298.63 701.225 310.315 691.038C372.737 620.825 439.154 554.209 505.971 488.191C513.561 478.503 492.587 469.914 488.193 461.724C431.164 404.296 373.936 347.068 317.107 289.44ZM593.062 873.31C214.335 904.371 55.234 834.458 88.7921 425.769C89.9906 245.095 135.034 90.1888 344.472 87.2924C773.436 57.7294 905.671 114.658 870.016 572.386C856.732 756.756 794.11 872.211 593.062 873.31Z" fill="#6b4ce6" data--h-bstatus="0OBSERVED"></path> </g></svg>
+    <div class="text-right"><div class="text-xs opacity-70">تحميل من</div><div class="text-lg font-bold leading-tight">Google Play</div></div></a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[2rem] mt-20 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row-reverse justify-between items-center gap-8 px-8 py-12 max-w-7xl mx-auto">
+<div class="flex items-center">
+<img alt="غيث" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0ujZlW5I0y6qxvj4msKnK3hyq2-yGtkZlVSN16G7Rep-pSYBxHU-z1av2PpzKqDKi9eDm9K7ySq48Oedm45fYqUsUWVU-LIaIZvLCGdoWJJ-aOKc4OXxrX-FbUsg9WoG4m6MqRIqUiD6dGMv4mjxDgoYp4CtnjEb7_XndmzifGYsoDej88-knfCKmpwK_2_ib85z0VqUcEjgaKCSoA4h4iBfjr1qkToFG5YareHbkYss-cyhJzNOJ1A2RpSGObfkzAgBttzK5n8VCDE"/>
+</div>
+<div class="flex flex-row-reverse gap-8 text-sm text-slate-500 dark:text-slate-400">
+<a class="hover:text-[#6C4CE6] transition-transform hover:translate-y-[-2px]" href="#">سياسة الخصوصية</a>
+<a class="hover:text-[#6C4CE6] transition-transform hover:translate-y-[-2px]" href="#">شروط الخدمة</a>
+<a class="hover:text-[#6C4CE6] transition-transform hover:translate-y-[-2px]" href="https://www.instagram.com/ghaith.adhkar/">تواصل معنا</a>
+</div>
+<div class="text-sm text-slate-500 dark:text-slate-400">
+                © ٢٠٢٦ غيث. كل الحقوق محفوظة.
+            </div>
+</div>
+</footer>
+</body></html>
